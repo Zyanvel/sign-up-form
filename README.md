@@ -29,7 +29,7 @@ Your users should be able to:
 
 ## Where to find everything
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+You will find all the required assets in the `/assets` folder. The assets are already optimized.
 
 There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
 
