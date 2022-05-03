@@ -3,7 +3,7 @@
 ## Welcome! 👋
 
 Thanks for being here Christine, Pema and Soley.
-
+:)
 **To do this challenge, you need a basic understanding of HTML, CSS and JavaScript.**
 
 ## The challenge
