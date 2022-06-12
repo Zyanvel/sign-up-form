@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    color: goldenrod;
+    color: rgb(255, 255, 255);
 }
 
 body {
@@ -17,4 +17,30 @@ body {
         width: 375px;
         height: 1000px;
     }
+}
+
+.container {
+    padding: 20% 30% 20% 30%;
+    font-size: 16px;
+}
+
+.columnLeft {
+    width: 50%;
+    float: left;
+    height: 100px;
+}
+
+.columnRight {
+    margin: 50%;
+    height: 100px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
 }
