@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    color: rgb(255, 255, 255);
 }
 
 body {
@@ -18,26 +17,81 @@ body {
     width: 80%;
     font-size: 16px;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .columnLeft {
     flex: 1 0 50%;
+    color: white;
 }
 
 .columnRight {
     flex: 1 0 50%;
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .promotionBanner {
     background-color: #5D54A3;
+    color: white;
     text-align: center;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 8px 8px indianred;
 }
 
+.wrapper {
+    background-color: white;
+    max-width: 430px;
+    width: 100%;
+    padding: 34px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
 
+.wrapper form {
+    margin-top: 25px;
+}
+
+.wrapper form .input-box {
+    height: 52px;
+    width: 100%;
+    margin: 18px 0;
+}
+
+form .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1.5px solid;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    padding: 5px;
+}
+
+.input-box input:focus;
+.input-box input:valid {
+    border-color: #5D54A3;
+}
+
+#submitBtn {
+    background: rgb(82, 146, 82);
+    color: white;
+}
+
+.terms {
+    color: gray;
+    font-size: 10px;
+}
+
+.bold {
+    color: red;
+    font-weight: bold;
 }
 
 h1 {
@@ -47,7 +101,6 @@ h1 {
 h4 {
     font-weight: 500;
 }
-
 
 @media screen and (max-width: 375px) {
     body {
@@ -66,6 +119,10 @@ h4 {
 
     .promotionBanner p {
        
+    }
+
+    .wrapper {
+
     }
 
 }
