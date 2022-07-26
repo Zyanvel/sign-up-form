@@ -45,7 +45,7 @@ body {
 
 .wrapper {
     background-color: white;
-    max-width: 430px;
+    max-width: 1440px;
     padding: 34px;
     margin-top: 10px;
     border-radius: 10px;
@@ -89,7 +89,7 @@ form .input-box input {
 }
 
 .bold {
-    color: red;
+    color: rgb(211, 125, 130)
     font-weight: bold;
 }
 
