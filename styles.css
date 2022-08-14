@@ -1,4 +1,4 @@
-* {
+  * {
     margin: 0px;
     padding: 0px;
 }
@@ -67,30 +67,35 @@ form .input-box input {
     width: 100%;
     outline: none;
     border: 1.5px solid;
-    border-radius: 10px;
+    border-radius: 5px;
     font-size: 17px;
     transition: all 0.3s ease;
     padding: 5px;
+    border-color: rgb(199, 199, 199);
 }
 
-.input-box input:focus;
+.input-box input:focus{
+    border-color: black;
+}
 .input-box input:valid {
-    border-color: #5D54A3;
+    border-color: #000000;
 }
 
 #submitBtn {
     background: rgb(82, 146, 82);
     color: white;
+    border-color: rgb(82, 146, 82);
 }
 
 .terms {
     color: gray;
     font-size: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .bold {
     color: rgb(211, 125, 130)
-    font-weight: bold;
 }
 
 h1 {
@@ -117,11 +122,11 @@ h4 {
     }
 
     .promotionBanner p {
-       
+       margin: 0;
     }
 
     .wrapper {
-
+        color: none;
     }
 
 }
