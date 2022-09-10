@@ -1,8 +1,8 @@
-  * {
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
-
 body {
     background-image: url(./assets/bg-intro-desktop.png);
     background-color: hsl(0, 100%, 74%);
@@ -12,7 +12,17 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-
+.error-text,
+.error-icon {
+    display: none;
+}
+.error {
+	border: 2px solid hsl(0, 100%, 74%);
+}
+.input-box.error .error-text,
+.input-box.error .error-icon {
+	display: block;
+}
 .container {
     width: 80%;
     font-size: 16px;
@@ -21,19 +31,16 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .columnLeft {
     flex: 1 0 50%;
     color: white;
 }
-
 .columnRight {
     flex: 1 0 50%;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
 }
-
 .promotionBanner {
     background-color: #5D54A3;
     color: white;
@@ -42,7 +49,6 @@ body {
     border-radius: 10px;
     box-shadow: 0 8px 8px indianred;
 }
-
 .wrapper {
     background-color: white;
     max-width: 1440px;
@@ -51,17 +57,17 @@ body {
     border-radius: 10px;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
-
 .wrapper form {
     margin-top: 25px;
 }
-
 .wrapper form .input-box {
     height: 52px;
     width: 100%;
-    margin: 18px 0;
+    margin: 35px 0;
 }
-
+.columnRight label {
+    display: none;
+}
 form .input-box input {
     height: 100%;
     width: 100%;
@@ -71,9 +77,8 @@ form .input-box input {
     font-size: 17px;
     transition: all 0.3s ease;
     padding: 5px;
-    border-color: rgb(199, 199, 199);
+    border-color: rgb(199, 199, 199);  
 }
-
 .input-box input:focus{
     border-color: black;
 }
@@ -81,10 +86,14 @@ form .input-box input {
     border-color: #000000;
 }
 
+
 #submitBtn {
     background: rgb(82, 146, 82);
     color: white;
     border-color: rgb(82, 146, 82);
+}
+#submitBtn:hover {
+    opacity: 0.8;
 }
 
 .terms {
@@ -96,6 +105,9 @@ form .input-box input {
 
 .bold {
     color: rgb(211, 125, 130)
+}
+.bold:hover {
+    opacity: 0.8;
 }
 
 h1 {
