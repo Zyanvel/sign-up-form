@@ -27,18 +27,30 @@
             <div class="wrapper">
                 <form action="#">
                     <div class="input-box">
-                        <input type="text" placeholder="First Name" required>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" placeholder="First Name">
+                        <img src="./assets/icon-error.svg" class="error-icon" alt="error-img">
+                        <p class="error-text">First name cannot be empty</p>
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Last Name" required>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" placeholder="Last Name">
+                        <img src="./assets/icon-error.svg" class="error-icon" alt="error-img">
+                        <p class="error-text">Last name cannot be empty</p>
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Email Address" required>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Email Address">
+                        <img src="./assets/icon-error.svg" class="error-icon" alt="error-img">
+                        <p class="error-text">Looks like this is not an email</p>
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Password" required>
+                        <label for="password">Password</label>
+                        <input type="text" id="password" placeholder="Password">
+                        <img src="./assets/icon-error.svg" class="error-icon" alt="error-img">
+                        <p class="error-text">Password cannot be empty</p>
                     </div>
-                    <div class="input-box Button">
+                    <div class="input-box button">
                         <input id="submitBtn" type="submit" value="Claim your free trial now">
                     </div>
                     <div class="terms">
