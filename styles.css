@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
 body {
     background-image: url(./assets/bg-intro-desktop.png);
     background-color: hsl(0, 100%, 74%);
@@ -12,17 +13,45 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
+.input-box {
+    position: relative;
+}
+
 .error-text,
 .error-icon {
     display: none;
 }
+
 .error {
-	border: 2px solid hsl(0, 100%, 74%);
+	border: 3px solid;
+    border-radius: 5px;
+    color: hsl(0, 100%, 74%);
 }
+
+.error-text {
+	text-align: right;
+    position: relative;
+    bottom: -2px;
+    padding-bottom: 0%;
+	font-size: .8rem;
+	font-style: italic;
+	color: hsl(0, 100%, 74%);
+	font-weight: 500;
+}
+
+.error-icon {
+    position: absolute;
+    top: 0;
+    right: 11px;
+    top: 26%;
+}
+
 .input-box.error .error-text,
 .input-box.error .error-icon {
 	display: block;
 }
+
 .container {
     width: 80%;
     font-size: 16px;
@@ -31,10 +60,12 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .columnLeft {
     flex: 1 0 50%;
     color: white;
 }
+
 .columnRight {
     flex: 1 0 50%;
     margin-top: 30px;
@@ -68,24 +99,23 @@ body {
 .columnRight label {
     display: none;
 }
+
 form .input-box input {
+    position: relative;
     height: 100%;
     width: 100%;
     outline: none;
-    border: 1.5px solid;
+    border: 1px solid;
     border-radius: 5px;
     font-size: 17px;
     transition: all 0.3s ease;
     padding: 5px;
-    border-color: rgb(199, 199, 199);  
+    color: rgb(163, 157, 157);
 }
+
 .input-box input:focus{
     border-color: black;
 }
-.input-box input:valid {
-    border-color: #000000;
-}
-
 
 #submitBtn {
     background: rgb(82, 146, 82);
