@@ -16,6 +16,7 @@ body {
 
 .input-box {
     position: relative;
+    border-radius: 10px;
 }
 
 .error-text,
@@ -23,10 +24,10 @@ body {
     display: none;
 }
 
-.error {
+.error input{
 	border: 3px solid;
-    border-radius: 5px;
-    color: hsl(0, 100%, 74%);
+    border-radius: 7px;
+    border-color: hsl(0, 100%, 74%);
 }
 
 .error-text {
@@ -88,14 +89,17 @@ body {
     border-radius: 10px;
     box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }
+
 .wrapper form {
     margin-top: 25px;
 }
+
 .wrapper form .input-box {
     height: 52px;
     width: 100%;
-    margin: 35px 0;
+    margin: 35px 0 15px 0;
 }
+
 .columnRight label {
     display: none;
 }
@@ -105,23 +109,24 @@ form .input-box input {
     height: 100%;
     width: 100%;
     outline: none;
-    border: 1px solid;
     border-radius: 5px;
     font-size: 17px;
     transition: all 0.3s ease;
     padding: 5px;
-    color: rgb(163, 157, 157);
+    color: lightgray;
 }
 
 .input-box input:focus{
-    border-color: black;
+    border: 3px solid black;
 }
 
 #submitBtn {
     background: rgb(82, 146, 82);
     color: white;
     border-color: rgb(82, 146, 82);
+    border: 1px solid;
 }
+
 #submitBtn:hover {
     opacity: 0.8;
 }
@@ -136,6 +141,7 @@ form .input-box input {
 .bold {
     color: rgb(211, 125, 130)
 }
+
 .bold:hover {
     opacity: 0.8;
 }
@@ -170,5 +176,4 @@ h4 {
     .wrapper {
         color: none;
     }
-
 }
