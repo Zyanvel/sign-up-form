@@ -97,7 +97,7 @@ body {
 .wrapper form .input-box {
     height: 52px;
     width: 100%;
-    margin: 35px 0;
+    margin: 35px 0 15px 0;
 }
 
 .columnRight label {
